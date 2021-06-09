@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <title>Quiz</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase.js"></script>
+    <script src = "https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="../../js/student/studentQuiz.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/student/style.css">
+
+    <script type="text/javascript" src="../../js/student/logout.js"></script>
+    <script type="text/javascript" src="../../js/student/chatbot.js"></script>
+    <script type="text/javascript" src="../../js/config/url.js"></script>
+
+  </head>
+  <body>
+
+     <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Welcome Student</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li >
+                    <a href="./home.html" >Home</a>
+
+                </li>
+                <li >
+                    <a href="./history.html">HISTORY</a>
+                </li>
+                <li class="active">
+                    <a href="./studentQuiz.html">QUIZ</a>
+                </li>
+
+                 <li>
+                    <a href="./flashCard.html">FLASHCARD</a>
+                </li>
+
+                <li>
+                    <a id="chatbot">CHATBOT</a>
+                </li>
+                   <li>
+                    <a href="./rewards.html">REWARDS</a>
+                </li>
+
+               <li>
+                   <a id="logout">Logout</a>
+               </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    </div>
+                </div>
+
+            </nav>
+
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div id = "container" style = "width: 550px; height: 40px; margin: 0 auto"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div id = "container1" style = "width: 550px; height: 40px; margin: 0 auto"></div>
+                  </div>
+                </div>
+
+
+    <div class="container">
+      <div class="displayCards">
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
